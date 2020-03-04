@@ -421,18 +421,18 @@
                         <div id="message"></div>
                         <form method="post"
                             action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfFVQPHapukkoz3pk5qyvPzpEY5HG1FOZwKweQYnG6YYD5KNQ/formResponse"
-                            name="contact-form" id="working_form" target="dummyIframe">
+                            name="contactForm" target="dummyIframe">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group mt-2">
                                         <input name="entry.485428648" id="name" type="text" class="form-control"
-                                            placeholder="お名前(必須)" required="">
+                                            placeholder="お名前(必須)" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group mt-2">
                                         <input name="emailAddress" id="email" type="email" class="form-control"
-                                            placeholder="メール(必須)" required="">
+                                            placeholder="メール(必須)" required>
                                     </div>
                                 </div>
                             </div>
@@ -454,7 +454,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 text-right">
-                                    <input type="submit" id="submit" name="send"
+                                    <input type="submit"
                                         class="submitBnt btn btn-custom text-uppercase" value="送信">
                                     <div id="simple-msg"></div>
                                 </div>
@@ -518,11 +518,11 @@
     <!-- CONTACT FORM -->
     <script>
         function showThxMessage(){
-           var email = document.contact-form.emailAddress.value;
+           var email = document.contactForm.emailAddress.value;
            if(email !== ''){
                var thxDiv = document.getElementById('thxMessage');
                thxDiv.getElementsByTagName('span')[0].innerHTML = email;
-               document.contact-form.reset();
+               document.contactForm.reset();
                document.getElementById('formWrapper').style.display = 'none';
                thxDiv.style.display = 'block';
            }
