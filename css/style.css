@@ -21,18 +21,24 @@
     11.RESPONSIVE
 ************************/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700');
+/* @import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:400,600,700&display=swap&subset=japanese'); */
 /*======================
         1.BASIC
 ========================*/
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
     overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+    letter-spacing: .1rem;
+    line-height: 1.5;
+}
+p {
+    letter-spacing: .1rem;
+    line-height: 1.65;
 }
 
 a, a:hover, a:focus, button, button:focus {
